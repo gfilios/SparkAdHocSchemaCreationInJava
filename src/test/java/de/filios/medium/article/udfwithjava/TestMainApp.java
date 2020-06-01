@@ -1,11 +1,10 @@
 package de.filios.medium.article.udfwithjava;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class TestMainApp {
@@ -15,6 +14,6 @@ public class TestMainApp {
     @Order(0)
     public void testHasAppGreeting (){
         MainApp app  = new MainApp();
-        assertEquals("Salve - Main App",app.getGreeting());
+        assertEquals("Main App - is App and running",app.getGreeting());
     }
 }

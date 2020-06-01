@@ -1,0 +1,44 @@
+{
+  "Timestamp": "2020-05-20",
+  "Source": "Shop Cologne",
+  "datagroups": [
+    {
+      "schema": "groceries",
+      "recordsets": [
+        "records":
+        [
+          { "Tomatoes",1000,20,2.1,"2020-05-01"},
+          { "Apples",1001,200,4.60,"2020-05-11"},
+          { "Onions",1002,2892,0.75,"2020-05-22"},
+          { "Strawberries",102,20,6.00,"2020-04-20"}
+        ],
+        "schema" :
+        {
+          "columns": [
+            {
+              "name": "NAME",
+              "coltype": "VARCHAR"
+            },
+            {
+              "name": "ID",
+              "coltype": "INTEGER"
+
+            },
+            {
+              "name": "STOCK",
+              "coltype": "INTEGER"
+            },
+            {
+              "name": "PRICE",
+              "coltype": "DECIMAL"
+            },
+            {
+              "name": "LASTUPDATE",
+              "coltype": "DATE"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
